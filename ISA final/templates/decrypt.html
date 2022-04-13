@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Decrypt your files
+        </title>
+    <!-- <header>
+        Decryption Page
+    </header> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="container">
+        <div >
+        <h4 class="header" >Decryption Page</h4>
+        </div>
+        <form action="/decrypt/gg", method="POST" enctype="multipart/form-data">
+        <div class="mb-3">
+        
+        <label class="form-label" for="privatekey">Select the private key for decryption</label> <br>
+        <input class="form-control" type="file" id="formFile" type="file" id="privatekey" name="privatekey">
+        </div>
+        <br>
+        <div>
+        <label class="form-label" for="imgkey">Select key and iv file for image encryption:</label> <br>
+        <input class="form-control" type="file" type="file" id="mainkey" name="mainkey"><br>
+        <input class="form-control" type="file" type="file" id="ivkey" name="ivkey">
+        </div> 
+        <br>
+        <div>
+        <label  class="form-label" for="imgkey">Select the image to be decrypted and decoded:</label> <br>
+        <input class="form-control" type="file" type="file" id="image2" name="image2">
+        </div>
+        <br>
+        <button class="btn btn-primary"> Decrypt</button>
+    </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    </body>
+</html>
